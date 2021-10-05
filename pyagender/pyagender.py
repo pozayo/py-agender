@@ -7,7 +7,7 @@ import numpy as np
 sys.setrecursionlimit(2 ** 20)
 # np.random.seed(2 ** 10)
 
-from image.py_agender.pyagender.wide_resnet import WideResNet
+from .wide_resnet import WideResNet
 
 
 class PyAgender():
