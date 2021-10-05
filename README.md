@@ -1,3 +1,7 @@
+# Change 
+- python 3.8 Support
+- keras < 2.6 Support
+
 # Face Age & Gender detection tool
 Simple opencv & tensorflow solution to estimate Age and Gender in your 
 next project. Command line or Python DIY style. 
@@ -56,7 +60,7 @@ python3 -m unittest
 ```
 
 ## Dependencies
-- Python 3.5, 3.6, 3.7
+- Python 3.5, 3.6, 3.7, 3.8
 - numpy ~> 1.15
 - Keras ~> 2.2
 - tensorflow or tensorflow-gpu ~> 1.10

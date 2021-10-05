@@ -4,7 +4,7 @@ import logging
 from keras.models import Model
 from keras.layers import Input, Activation, add, Dense, Flatten, Dropout
 from keras.layers.convolutional import Conv2D, AveragePooling2D
-from keras.layers.normalization import BatchNormalization
+from keras.layers.normalization.batch_normalization import BatchNormalization
 from keras.regularizers import l2
 from keras import backend as K
 
@@ -18,7 +18,7 @@ class WideResNet:
         self._use_bias = False
         self._weight_init = "he_normal"
 
-        if K.image_dim_ordering() == "th":
+        if K.image_data_format() == "th":
             logging.debug("image_dim_ordering = 'th'")
             self._channel_axis = 1
             self._input_shape = (3, image_size, image_size)
